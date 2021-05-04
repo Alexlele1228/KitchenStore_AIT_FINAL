@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.kitchenstore.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.kitchenstore.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.kitchenstore.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.kitchenstore.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/binFragment"
+        android:name="com.example.kitchenstore.BinFragment"
+        android:label="bin"
+        tools:layout="@layout/bin" />
+    <fragment
+        android:id="@+id/binMonthlyFragment2"
+        android:name="com.example.kitchenstore.BinMonthlyFragment"
+        android:label="bin_monthly_items"
+        tools:layout="@layout/bin_monthly_items" />
+    <fragment
+        android:id="@+id/binItemsFragment"
+        android:name="com.example.kitchenstore.BinItemsFragment"
+        android:label="bin_items"
+        tools:layout="@layout/bin_items" />
+    <fragment
+        android:id="@+id/confirmationSignUpFragment"
+        android:name="com.example.kitchenstore.ConfirmationSignUpFragment"
+        android:label="confirmation_signup"
+        tools:layout="@layout/confirmation_signup" />
+    <fragment
+        android:id="@+id/continueCookingLaterFragment"
+        android:name="com.example.kitchenstore.ContinueCookingLaterFragment"
+        android:label="continue_cooking_later"
+        tools:layout="@layout/continue_cooking_later" />
+    <fragment
+        android:id="@+id/cookingInstructionsFragment"
+        android:name="com.example.kitchenstore.CookingInstructionsFragment"
+        android:label="cooking_instructions"
+        tools:layout="@layout/cooking_instructions" />
+    <fragment
+        android:id="@+id/fridgePageFragment"
+        android:name="com.example.kitchenstore.FridgePageFragment"
+        android:label="fridge_page"
+        tools:layout="@layout/inventory_page" />
+    <fragment
+        android:id="@+id/homepageFragment"
+        android:name="com.example.kitchenstore.HomepageFragment"
+        android:label="homepage"
+        tools:layout="@layout/homepage" />
+    <fragment
+        android:id="@+id/ingredientsFragment"
+        android:name="com.example.kitchenstore.IngredientsFragment"
+        android:label="ingredients"
+        tools:layout="@layout/ingredients" />
+    <fragment
+        android:id="@+id/inventoryMenuOptionsFragment"
+        android:name="com.example.kitchenstore.InventoryMenuOptionsFragment"
+        android:label="inventory_menu_options"
+        tools:layout="@layout/inventory_menu_options" />
+    <fragment
+        android:id="@+id/inventorySignupFragment"
+        android:name="com.example.kitchenstore.InventorySignupFragment"
+        android:label="inventory_signup"
+        tools:layout="@layout/inventory_signup" />
+    <fragment
+        android:id="@+id/invitationCodeJoinFragment"
+        android:name="com.example.kitchenstore.InvitationCodeJoinFragment"
+        android:label="invitation_code_join"
+        tools:layout="@layout/invitation_code_join" />
+    <fragment
+        android:id="@+id/ownMealConfirmUsedItemsFragment"
+        android:name="com.example.kitchenstore.OwnMealConfirmUsedItemsFragment"
+        android:label="own_meal_confirm_used_items"
+        tools:layout="@layout/own_meal_confirm_used_items" />
+    <fragment
+        android:id="@+id/ownMealEditFridgeProductsFragment"
+        android:name="com.example.kitchenstore.OwnMealEditFridgeProductsFragment"
+        android:label="own_meal_edit_fridge_products"
+        tools:layout="@layout/own_meal_edit_fridge_products" />
+    <fragment
+        android:id="@+id/ownMealEditPantryProductsFragment"
+        android:name="com.example.kitchenstore.OwnMealEditPantryProductsFragment"
+        android:label="own_meal_edit_pantry_products"
+        tools:layout="@layout/own_meal_edit_pantry_products" />
+    <fragment
+        android:id="@+id/ownMealMenuFragment"
+        android:name="com.example.kitchenstore.OwnMealMenuFragment"
+        android:label="ownmeal_menu"
+        tools:layout="@layout/ownmeal_menu" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.kitchenstore.SignUpFragment"
+        android:label="sign_up"
+        tools:layout="@layout/sign_up" />
+    <fragment
+        android:id="@+id/pantryPageFragment"
+        android:name="com.example.kitchenstore.PantryPageFragment"
+        android:label="pantry_page"
+        tools:layout="@layout/pantry_page" />
+    <fragment
+        android:id="@+id/prepareAMealOptions"
+        android:name="com.example.kitchenstore.PrepareAMealOptions"
+        android:label="prepare_a_meal_options"
+        tools:layout="@layout/prepare_a_meal_options" />
+    <fragment
+        android:id="@+id/recipeFinderMealsFragment"
+        android:name="com.example.kitchenstore.RecipeFinderMealsFragment"
+        android:label="recipe_finder_meals"
+        tools:layout="@layout/recipe_finder_meals" />
+    <fragment
+        android:id="@+id/unavailableItemsFragment"
+        android:name="com.example.kitchenstore.UnavailableItemsFragment"
+        android:label="unavailable_items"
+        tools:layout="@layout/unavailable_items" />
+    <fragment
+        android:id="@+id/selectItemsUsedFragment"
+        android:name="com.example.kitchenstore.SelectItemsUsedFragment"
+        android:label="select_items_used"
+        tools:layout="@layout/select_items_used" />
+</navigation>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kitchenstore">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PublishActivity" android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".ComfirmEditActivity" android:parentActivityName=".EditInventoryActivity" />
+        <activity android:name=".EditInventoryActivity" android:parentActivityName=".InventoryActivity" />
+        <activity android:name=".InventoryActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".BinActivity"  android:parentActivityName=".MainActivity"/> <!-- <uses-library -->
+        <!-- android:name="com.google.android.wearable" -->
+        <!-- android:required="true" /> -->
+        <!-- &lt;!&ndash; -->
+        <!-- Set to true if your app is Standalone, that is, it does not require the handheld -->
+        <!-- app to run. -->
+        <!-- &ndash;&gt; -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.wearable.standalone" -->
+        <!-- android:value="true" /> -->
+        <service
+            android:name=".services.PushExpiryService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.ExpiryService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.NotificationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".InvitationCompleteActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="my.com"
+                    android:scheme="m" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".QRCodeActivity" android:parentActivityName=".CartActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CartActivity" android:parentActivityName=".StoreActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StoreActivity" android:parentActivityName=".MainActivity">
+            <intent-filter>
+                <action android:name=".store" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

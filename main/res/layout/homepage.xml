@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="HomepageFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="215dp">
+
+        <Button
+            android:id="@+id/inventory_button"
+            android:layout_width="129dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/app_btn"
+            android:text="INVENTORY"
+            app:layout_constraintStart_toStartOf="@+id/guideline45"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <Button
+            android:id="@+id/invite_button_menu"
+            android:layout_width="129dp"
+            android:layout_height="42dp"
+            android:background="@drawable/app_btn"
+            android:text="Invite Others"
+            app:layout_constraintStart_toStartOf="@+id/guideline45"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <Button
+            android:id="@+id/bin_button_menu"
+            android:layout_width="129dp"
+            android:layout_height="42dp"
+            android:background="@drawable/app_btn"
+            android:text="BIN"
+            app:layout_constraintEnd_toStartOf="@+id/guideline46"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <Button
+            android:id="@+id/expired_items_button_menu"
+            android:layout_width="129dp"
+            android:layout_height="42dp"
+            android:background="@drawable/app_btn"
+            android:text="DONATED ITEMS"
+            app:layout_constraintStart_toStartOf="@+id/guideline45"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="128dp"
+            android:layout_height="130dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline45"
+            app:layout_constraintTop_toTopOf="@+id/guideline44"
+            app:srcCompat="@mipmap/fridge"
+            tools:srcCompat="@mipmap/fridge" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="128dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/expired_items_button_menu"
+            app:layout_constraintStart_toStartOf="@+id/guideline45"
+            app:layout_constraintTop_toBottomOf="@+id/inventory_button"
+            app:srcCompat="@mipmap/donate_icon"
+            tools:srcCompat="@mipmap/donate_icon" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline45"
+            app:layout_constraintTop_toBottomOf="@+id/expired_items_button_menu"
+            app:srcCompat="@mipmap/invite_icon"
+            tools:srcCompat="@mipmap/invite_icon" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline46"
+            app:layout_constraintTop_toTopOf="@+id/guideline44"
+            app:srcCompat="@mipmap/fork_and_knife"
+            tools:srcCompat="@mipmap/fork_and_knife" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="127dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline46"
+            app:layout_constraintTop_toBottomOf="@+id/prepare_meal_button_menu"
+            app:srcCompat="@mipmap/bin_icon"
+            tools:srcCompat="@mipmap/bin_icon" />
+
+        <Button
+            android:id="@+id/online_store_button_menu"
+            android:layout_width="127dp"
+            android:layout_height="44dp"
+            android:background="@drawable/app_btn"
+            android:text="ONLINE STORE"
+            app:layout_constraintEnd_toStartOf="@+id/guideline46"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+        <Button
+            android:id="@+id/prepare_meal_button_menu"
+            android:layout_width="129dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/app_btn"
+            android:text="PREPARE MEAL"
+            app:layout_constraintEnd_toStartOf="@+id/guideline46"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="122dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline46"
+            app:layout_constraintTop_toBottomOf="@+id/bin_button_menu"
+            app:srcCompat="@mipmap/trolley"
+            tools:srcCompat="@mipmap/trolley" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.03" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.03" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.97" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
